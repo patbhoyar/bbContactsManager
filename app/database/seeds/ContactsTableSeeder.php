@@ -12,18 +12,36 @@ class ContactsTableSeeder extends Seeder {
                     'lName' => 'Smith',
                     'email' => 'johnSmith@gmail.com'
                 ),
-                
                 array(
                     'fName' => 'Joe',
                     'lName' => 'Smith',
                     'email' => 'joeSmith@gmail.com'
                 ),
-                
                 array(
-                    'fName' => 'John',
+                    'fName' => 'Jake',
                     'lName' => 'Doe',
                     'email' => 'johnDoe@gmail.com'
-                )
+                ),
+                array(
+                    'fName' => 'Arnold',
+                    'lName' => 'Smith',
+                    'email' => 'johnSmith@gmail.com'
+                ),
+                array(
+                    'fName' => 'Ram',
+                    'lName' => 'Smith',
+                    'email' => 'joeSmith@gmail.com'
+                ),
+                array(
+                    'fName' => 'Sly',
+                    'lName' => 'Smith',
+                    'email' => 'johnSmith@gmail.com'
+                ),
+                array(
+                    'fName' => 'Jean',
+                    'lName' => 'Smith',
+                    'email' => 'joeSmith@gmail.com'
+                ),
             );
             
             DB::table('contacts')->insert($arr);

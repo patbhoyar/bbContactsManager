@@ -13,10 +13,51 @@
             <h1>Contacts Manager</h1>
         </header>
 
-        <div class="btn btn-primary">Add Contact</div>
+        <a href="#add" class="btn btn-primary">Add Contact</a>
         
-        <div class="">
-            
+        <table class="table">
+            <thead>
+                <tr>
+                    <td>First Name</td>
+                    <td>Last Name</td>
+                    <td>Email Address</td>
+                </tr>
+            </thead>
+            <tbody id="contactsBody">
+                <script type="text/template" id="contactTemplate">
+                    <td><%= fName %></td>
+                    <td><%= lName %></td>
+                    <td><%= email %></td>
+                    <td><button class="edit btn btn-success">Edit</button></td>
+                    <td><button class="delete btn btn-danger">Delete</button></td>
+                </script>
+            </tbody>
+        </table>
+        
+        <div id="editContact">
+            <script type="text/template" id="editContactTemplate">
+                <label for="fName">First Name</label>
+                <input type="text" value="<%= fName %>" id="fName"/>
+                <label for="lName">Last Name</label>
+                <input type="text" value="<%= lName %>" id="lName"/>
+                <label for="email">Email</label>
+                <input type="text" value="<%= email %>" id="email"/>
+                <br>
+                <button class="btn btn-success" id="saveChanges">Save Changes</button>
+                <button class="btn btn-danger" id="cancelChanges">Cancel</button>
+            </script>
+        </div>
+        
+        <div id="addContact">
+            <label for="fName">First Name</label>
+            <input type="text" id="fName"/>
+            <label for="lName">Last Name</label>
+            <input type="text" id="lName"/>
+            <label for="email">Email</label>
+            <input type="text" id="email"/>
+            <br>
+            <button class="btn btn-success" id="addNewContact">Add</button>
+            <button class="btn btn-danger" id="cancelNewContact">Cancel</button>
         </div>
     </div>
     <script src="scripts/underscore.js"></script>

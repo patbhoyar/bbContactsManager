@@ -1,38 +1,9 @@
-ul{
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
-}
-
-.taskItem{
-    clear: both;
-    height: 40px;
-    font-size: 18px;
-    background: #eee;
-    line-height: 40px;
-    margin-top: 1px;
-    padding-left: 20px;
-}
-
-#newTaskInput{
-    margin: 0 0 -10px 30px;
-}
-
-.taskItem{
-    cursor: pointer;
-    position: relative;
-}
-
-.delete{
-    float: right;
-    margin: 5px;
+table, .editContact{
     display: none;
+    width: 100%;
 }
 
-.check{
-    position: absolute;
-    right: 30px;
-    top: 12px;
+thead{
+    font-weight: bold;
+    font-size: 21px;
 }
-
-.strikethrough{ text-decoration: line-through; }

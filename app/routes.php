@@ -11,8 +11,10 @@
 |
 */
 
+Route::get('contacts/show/{id}', 'ContactsController@show');
+Route::POST('contacts/create', 'ContactsController@store');
+Route::PUT('contacts/update/{id}', 'ContactsController@edit');
 Route::resource('contacts', 'ContactsController');
-
 Route::get('/', function()
 {
 	return View::make('index');

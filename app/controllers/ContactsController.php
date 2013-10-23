@@ -29,7 +29,12 @@ class ContactsController extends \BaseController {
 	 */
 	public function store()
 	{
-		//
+            $contact = new Contact();
+            $contact->fName = Input::get('fName');
+            $contact->lName = Input::get('lName');
+            $contact->email = Input::get('email');
+            $contact->save();
+            return $contact;
 	}
 
 	/**
@@ -51,7 +56,12 @@ class ContactsController extends \BaseController {
 	 */
 	public function edit($id)
 	{
-		//
+            $contact = Contact::find($id);
+            $contact->fName = Input::get('fName');
+            $contact->lName = Input::get('lName');
+            $contact->email = Input::get('email');
+            $contact->save();
+            return $contact;
 	}
 
 	/**
